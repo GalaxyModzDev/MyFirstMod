@@ -33,7 +33,7 @@ public class MyFirstMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+    
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
@@ -44,6 +44,7 @@ public class MyFirstMod {
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            System.out.prinln("{playerName} + 's game is setting up, Please give them a moment to load in.")
         }
     }
 }
